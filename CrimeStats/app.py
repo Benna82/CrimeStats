@@ -11,7 +11,7 @@ app = Flask(__name__)
 @app.route("/")
 def index():
     # set up database connection
-    conn = pyodbc.connect('DRIVER={ODBC Driver 17 for SQL Server};SERVER=975-BVANSTADEN;DATABASE=Benjamin;UID=sa;PWD=Waldo2019#@!')
+    conn = pyodbc.connect('DRIVER={ODBC Driver 17 for SQL Server};SERVER=975-BVANSTADEN;DATABASE=Benjamin;UID=sa;PWD=###############')
 
     # query 1
     query1 = "EXEC SAPS_SP_Total_PerProvince_LatestYear"
